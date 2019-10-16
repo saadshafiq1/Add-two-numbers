@@ -1,9 +1,9 @@
 INCLUDE Irvine32.inc
 
-;Declaring variables that are too be used in this program
+;Declaring variables that are being used in this program
 .data 
 
-; declearing array
+; declearing the array
 
 array dword 4 DUP (?)
 var1 dword ?
@@ -13,22 +13,22 @@ sumOfArray dword ?
 .code
 
 main PROC
-;moving the value zero in the register
+;moving the value zero in the register eax
 mov eax,0
 
-;Taking input from user at the first index in the array
+;Taking input from user at the 1st index in the array
 call readint
 mov array,eax
 
-;Taking input from user at the second index in the array
+;Taking input from user at the 2nd index in the array
 call readint
 mov array+1,eax
 
-;Taking input from user at the third index in the array
+;Taking input from user at the 3rd index in the array
 call readint
 mov array+2,eax
 
-;Taking input from user at the fourth index in the array
+;Taking input from user at the 4th index in the array
 call readint
 mov array+3,eax
 
@@ -39,11 +39,11 @@ add eax,array+2
 add eax,array+3
 mov sumOfArray,eax
 
-; printing result
+; printing the results after implementation
 call writeint
 call readint
 
-
+;exiting the main area and ending the program
 exit
 
 main ENDP
