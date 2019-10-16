@@ -1,19 +1,19 @@
 INCLUDE Irvine32.inc
 
-;Declaring variables that are being used in this program
+//Declaring variables that are being used in this program
 .data 
 
-; declearing the array
+//declearing the array
 
 array dword 4 DUP (?)
 var1 dword ?
 var2 dword ?
 sumOfArray dword ?
-; This segment contains the instructions that are too be executed
+//This segment contains the instructions that are too be executed
 .code
 
 main PROC
-;moving the value zero in the register eax
+//moving the value zero in the register eax
 mov eax,0
 
 ;Taking input from user at the 1st index in the array
