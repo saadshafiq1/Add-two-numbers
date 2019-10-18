@@ -33,11 +33,11 @@ call readint
 mov array+3,eax
 
 ; Adding all the elements present in the array
-add eax,array
-add eax,array+1
-add eax,array+2
-add eax,array+3
-mov sumOfArray,eax
+add eax,array //moving array into eax register
+add eax,array+1 //moving second element of array into eax register
+add eax,array+2 //moving third element of array into eax register
+add eax,array+3 //moving fourth element of array into eax register
+mov sumOfArray,eax //moving sum of array from eax register into sum variable
 
 ; printing the results after implementation
 call writeint
